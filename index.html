@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>∿ SOUND VIZ</title>
+  <meta name="description" content="터치디자이너 스타일 실시간 사운드 시각화 — 4가지 시각화 모드" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles.css" />
+
+  <!-- React (UMD — no build step needed) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Load modules in dependency order -->
+  <script src="./src/config.js"></script>
+  <script src="./src/visualizers.js"></script>
+  <script src="./src/app.js"></script>
+
+  <!-- Mount -->
+  <script>
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement(App)
+    );
+  </script>
+</body>
+</html>

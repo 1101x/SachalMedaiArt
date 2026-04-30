@@ -1,0 +1,6 @@
+{
+  "outputDirectory": ".",
+  "buildCommand": null,
+  "devCommand": "vite --port $PORT",
+  "framework": null
+}
